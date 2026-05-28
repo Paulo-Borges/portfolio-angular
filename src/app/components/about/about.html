@@ -3,8 +3,26 @@
         <h1 class="text-white text-2xl font-semibold py-8">sobre mim</h1>
         <p class="border-b-2 w-[83%] h-1"></p>
     </div>
+
     <div class="flex  flex-wrap justify-center gap-4 ">
-        <div class="bg-zinc-900 border w-[500px] p-2 rounded-xl text-white">
+        @for(card of cards; track card.title) {
+
+            <div class="bg-zinc-900 border w-[500px] p-2 rounded-xl text-white">
+                <span class="text-red-700">
+                    <i [className]="'bi ' + card.icon"></i>         <!--muito importante ser assim pra colocar os icones -->
+                </span>
+                <h2>{{ card.title }}</h2>
+                <p>{{ card.description }}</p>
+            </div>
+
+        }
+
+
+
+
+
+
+        <!-- <div class="bg-zinc-900 border w-[500px] p-2 rounded-xl text-white">
             <span class="text-red-700"><i class="bi bi-mortarboard"></i></span>
             <h2>Análise e Desenvolvimento</h2>
             <p>Cursando ADS no 2º período. Combinando os estudos com projetos práticos que já estão no GitHub.</p>
@@ -23,7 +41,7 @@
             <span class="text-red-700"><i class="bi bi-rocket-takeoff"></i></span>
             <h2>Buscando estágio</h2>
             <p>Quero minha primeira oportunidade para contribuir, aprender com a equipe e crescer como desenvolvedor.</p>
-        </div>
+        </div> -->
         
     </div>
     
