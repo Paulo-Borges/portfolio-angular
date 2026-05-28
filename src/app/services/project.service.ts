@@ -18,7 +18,7 @@ export class ProjectService {
       description: 'Aplicação front-end, dos meus projetos e de tudo que estou estudando.',
       technologies: ['Angular21', 'TailwindCss ', ' Bootstrap'], 
       githubUrl: 'https://github.com/Paulo-Borges/portfolio-angular.git',
-      imageUrl: 'emConstrucao.jpg'
+      imageUrl: 'Portifolio.png'
     },
     {
       title: 'Portfolio2',
