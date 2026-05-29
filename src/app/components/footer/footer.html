@@ -1,3 +1,8 @@
 <footer class="flex justify-center text-sm m-9">
-    <p><i class="bi bi-c-circle text-[9px]"></i> Borges - Built with Angular </p>
+    <p class="flex items-center gap-4">
+        {{ formatDate('America/Sao_Paulo') }}
+        <i class="bi bi-c-circle text-[9px]"></i> 
+        <span>Borges - Built with Angular</span> 
+        {{ formatTime('America/Sao_Paulo') }}
+    </p>
 </footer>

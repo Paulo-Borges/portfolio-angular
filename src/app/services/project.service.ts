@@ -21,11 +21,11 @@ export class ProjectService {
       imageUrl: 'Portifolio.png'
     },
     {
-      title: 'Portfolio2',
-      description: 'Aplicação front-end, dos meus projetos e de tudo que estou estudando.',
-      technologies: ['Angular 21', 'TailwindCss', 'Bootstrap'], 
+      title: 'Financeiro  /  ANGULAR',
+      description: 'Aplicação front-end, com Signals, @for, tratamento de erros, inputs e gráfico financeiro com Chart.js e ng2-charts.',
+      technologies: ['Angular 21', 'TailwindCss', 'Chart.js', 'ng2-charts', 'API da Alpha Vantage'], 
       githubUrl: 'https://github.com/Paulo-Borges/portfolio-angular.git',
-      imageUrl: 'emConstrucao.jpg'
+      imageUrl: 'angularFinance.png'
     }
   ];
 
