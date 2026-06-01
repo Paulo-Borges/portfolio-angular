@@ -1,7 +1,7 @@
 <section class="border-b-2 px-8 py-9 ">
   <div class="flex gap-3 items-center">
     <h1 class="text-white text-sm sm:text-2xl font-semibold p-8 sm:py-8">Meus Projetos</h1>
-    <p class="border-b-2 w-[83%] h-1"></p>
+    <p class="border-b-2 w-[83%] hidden sm:flex h-1"></p>
 </div>
     <div class="flex flex-wrap gap-4 justify-center">
       @for (project of projects; track project.title) {
@@ -23,7 +23,7 @@
         </div>
       }
     </div>
-    <div class="flex gap-2 justify-center items-center bg-zinc-900 border hover:border-red-700 my-9 p-2 rounded-xl text-white">
+    <div class="flex gap-2 justify-center items-center bg-zinc-900 border hover:border-red-700 m-10 sm:my-9 p-2 rounded-xl text-white">
         
         <a href="https://github.com/Paulo-Borges" target="_blank"><p><i class="bi bi-github"></i>  Ver todos os repositórios</p></a>
     </div>
