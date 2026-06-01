@@ -16,7 +16,7 @@ export class About {
   readonly cards: CardAbout[] = [
     {
       icon: 'bi-mortarboard',
-      title: 'Análise e Desenvolvimento2222',
+      title: 'Análise e Desenvolvimento',
       description: 'Cursando ADS no 2º período. Combinando os estudos com projetos práticos que já estão no GitHub.'
     },
     {

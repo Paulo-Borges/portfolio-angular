@@ -26,6 +26,13 @@ export class ProjectService {
       technologies: ['Angular 21', 'TailwindCss', 'Chart.js', 'ng2-charts', 'API da Alpha Vantage'], 
       githubUrl: 'https://github.com/Paulo-Borges/portfolio-angular.git',
       imageUrl: 'angularFinance.png'
+    },
+    {
+      title: 'Clock  /  ANGULAR',
+      description: 'O **Angular Clock** é uma aplicação web que exibe a hora e a data atualizadas a cada segundo. O relógio principal usa o fuso `America/Sao_Paulo`, e cartões adicionais mostram o mesmo instante em outros países, formatados em português do Brasil (`pt-BR`).',
+      technologies: ['Angular 21', 'Tailwind CSS 4', 'TypeScript 5.9', 'RxJS'], 
+      githubUrl: 'https://github.com/Paulo-Borges/angular-clock.git',
+      imageUrl: 'AngularClock.png'
     }
   ];
 

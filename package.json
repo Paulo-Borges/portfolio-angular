@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy": "ng build --base-href 'https://paulo-borges.github.io/portfolio-angular/",
+    "deploy1": "npx angular-cli-ghpages --dir=dist/portfolio-angular/browser",
     "test": "ng test"
   },
   "private": true,
