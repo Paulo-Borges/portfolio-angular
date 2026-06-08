@@ -1,59 +1,116 @@
-# PortfolioAngular
+# Portfolio Angular — Paulo Borges
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+Portfólio pessoal desenvolvido com **Angular 21**, **Tailwind CSS 4** e **TypeScript**, apresentando projetos, stack técnica e formas de contato.
 
-## Development server
+**Demo ao vivo:** [https://paulo-borges.github.io/portfolio-angular/](https://paulo-borges.github.io/portfolio-angular/)
 
-To start a local development server, run:
+## Sobre o projeto
+
+Aplicação single-page com seções de apresentação, sobre mim, projetos, habilidades e contato. Os projetos são carregados via `ProjectService` e exibidos com cards responsivos.
+
+### Funcionalidades
+
+- Apresentação com links para GitHub e currículo
+- Seção **Sobre mim** com cards informativos
+- Galeria de **Projetos** com tecnologias e link para o repositório
+- **Stack técnica** (Frontend, Backend, Banco de Dados e Ferramentas)
+- **Contato** via GitHub, LinkedIn, e-mail e WhatsApp
+- Layout responsivo com Tailwind CSS
+
+### Projetos em destaque
+
+| Projeto | Tecnologias |
+|---------|-------------|
+| BorgEventos | .NET, C#, SQL Server, Entity Framework |
+| Portfolio | Angular 21, Tailwind CSS, Bootstrap |
+| Financeiro | Angular 21, Chart.js, ng2-charts |
+| Angular Clock | Angular 21, Tailwind CSS 4, RxJS |
+| Formulário | Angular, HttpClient, FormsModule |
+
+## Tecnologias
+
+- [Angular](https://angular.dev/) 21
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [TypeScript](https://www.typescriptlang.org/) 5.9
+- [RxJS](https://rxjs.dev/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Vitest](https://vitest.dev/) (testes unitários)
+
+## Estrutura do projeto
+
+```
+src/app/
+├── components/
+│   ├── about/       # Seção sobre mim
+│   ├── contact/     # Seção de contato
+│   ├── footer/      # Rodapé
+│   ├── header/      # Cabeçalho e navegação
+│   ├── projects/    # Listagem de projetos
+│   └── skills/      # Stack técnica
+├── models/          # Interfaces (ex.: Project)
+└── services/        # ProjectService
+```
+
+## Pré-requisitos
+
+- [Node.js](https://nodejs.org/) (recomendado: LTS)
+- [npm](https://www.npmjs.com/) 10.x
+
+## Instalação
 
 ```bash
+git clone https://github.com/Paulo-Borges/portfolio-angular.git
+cd portfolio-angular
+npm install
+```
+
+## Desenvolvimento
+
+Inicie o servidor local:
+
+```bash
+npm start
+# ou
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse [http://localhost:4200/](http://localhost:4200/). A aplicação recarrega automaticamente ao alterar os arquivos.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Build
 
 ```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+npm run build
+# ou
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Os artefatos de produção ficam em `dist/portfolio-angular/browser/`.
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Deploy (GitHub Pages)
 
 ```bash
+npm run deploy
+npm run deploy1
+```
+
+O script `deploy` gera o build com o `base-href` correto; o `deploy1` publica no GitHub Pages via `angular-cli-ghpages`.
+
+## Testes
+
+```bash
+npm test
+# ou
 ng test
 ```
 
-## Running end-to-end tests
+Executa os testes unitários com Vitest.
 
-For end-to-end (e2e) testing, run:
+## Contato
 
-```bash
-ng e2e
-```
+- **GitHub:** [Paulo-Borges](https://github.com/Paulo-Borges)
+- **LinkedIn:** [Paulo Borges de Almeida](https://www.linkedin.com/in/paulo-borges-de-almeida-b543b3242/)
+- **E-mail:** devborges50@gmail.com
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Licença
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Projeto de portfólio pessoal. Sinta-se à vontade para usar como referência.
