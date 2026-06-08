@@ -33,6 +33,13 @@ export class ProjectService {
       technologies: ['Angular 21', 'Tailwind CSS 4', 'TypeScript 5.9', 'RxJS'], 
       githubUrl: 'https://github.com/Paulo-Borges/angular-clock.git',
       imageUrl: 'AngularClock.png'
+    },
+    {
+      title: 'Formulário  /  ANGULAR',
+      description: 'Aplicação front-end, com diretivas, @for, @if, arquitetura com CommonModule e FormsModule .',
+      technologies: ['Angular ', 'HttpClient'], 
+      githubUrl: 'https://github.com/Paulo-Borges/form-angular.git',
+      imageUrl: 'emConstrucao.jpg'
     }
   ];
 
