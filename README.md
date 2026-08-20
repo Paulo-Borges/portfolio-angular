@@ -114,3 +114,12 @@ Executa os testes unitários com Vitest.
 ## Licença
 
 Projeto de portfólio pessoal. Sinta-se à vontade para usar como referência.
+
+
+## MEU CONTROLE ( PRA ATUALIZAR )
+
+cd E:\portfolio-angular  ( sempre voltar )
+
+ng build --configuration production --base-href "https://paulo-borges.github.io/portfolio-angular/"
+
+angular-cli-ghpages --dir=dist/portfolio-angular/browser
