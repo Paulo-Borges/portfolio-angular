@@ -8,6 +8,8 @@ Portfólio pessoal desenvolvido com **Angular 21**, **Tailwind CSS 4** e **TypeS
 
 Aplicação single-page com seções de apresentação, sobre mim, projetos, habilidades e contato. Os projetos são carregados via `ProjectService` e exibidos com cards responsivos.
 
+Estagiário de Desenvolvimento de Software na **HM Consultoria** (desde jun/2026), cursando ADS no 2º período, com foco em Angular e .NET.
+
 ### Funcionalidades
 
 - Apresentação com links para GitHub e currículo
@@ -21,10 +23,12 @@ Aplicação single-page com seções de apresentação, sobre mim, projetos, hab
 
 | Projeto | Tecnologias |
 |---------|-------------|
+| SMTP | .NET, C#, SQL Server, Entity Framework |
+| SMTPFront | Angular 20, Tailwind CSS, Bootstrap |
 | BorgEventos | .NET, C#, SQL Server, Entity Framework |
 | Portfolio | Angular 21, Tailwind CSS, Bootstrap |
-| Financeiro | Angular 21, Chart.js, ng2-charts |
-| Angular Clock | Angular 21, Tailwind CSS 4, RxJS |
+| Financeiro | Angular 21, Chart.js, ng2-charts, Alpha Vantage |
+| Clock | Angular 21, Tailwind CSS 4, RxJS |
 | Formulário | Angular, HttpClient, FormsModule |
 
 ## Tecnologias
