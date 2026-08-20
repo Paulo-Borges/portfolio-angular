@@ -7,6 +7,20 @@ import { Project } from '../models/project.model';
 export class ProjectService {
   private projects: Project[] = [
     {
+      title: 'SMTP  / C# / .NET ',
+      description: 'Sistema com back-end desenvolvido em .NET e APIs RESTful.',
+      technologies: ['.NET ', 'C#  ', 'SQL Server ', 'Entity Framework'],
+      githubUrl: 'https://github.com/Paulo-Borges/SMTP.git',
+      imageUrl: 'emConstrucao.jpg'
+    },
+    {
+      title: 'SMTPFront  /  ANGULAR',
+      description: 'Aplicação front-end, do projeto SMTP.',
+      technologies: ['Angular20', 'TailwindCss ', ' Bootstrap'], 
+      githubUrl: 'https://github.com/Paulo-Borges/SMTPFront.git',
+      imageUrl: 'emConstrucao.jpg'
+    },
+    {
       title: 'BorgEventos  / C# / .NET / ANGULAR',
       description: 'Sistema completo de gerenciamento de eventos, com back-end robusto desenvolvido em .NET e APIs RESTful.',
       technologies: ['.NET ', 'C#  ', 'SQL Server ', 'Entity Framework'],

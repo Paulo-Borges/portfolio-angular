@@ -20,9 +20,9 @@ export class About {
       description: 'Cursando ADS no 2º período. Combinando os estudos com projetos práticos que já estão no GitHub.'
     },
     {
-      icon: 'bi-arrow-down-up',
-      title: 'Transição de carreira',
-      description: 'Já tenho experiência em outra área e trouxe para o desenvolvimento a disciplina e visão de negócio que aprendi antes.'
+      icon: 'bi-rocket-takeoff',
+      title: 'Carreira',
+      description: 'Back-end: Desenvolvimento de APIs RESTful robustas em .NET (C#), Front-end: Construção de interfaces dinâmicas, responsivas e componentizadas.'
     },
     {
       icon: 'bi-postcard-heart',
