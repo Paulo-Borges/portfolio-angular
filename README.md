@@ -126,4 +126,4 @@ cd E:\portfolio-angular  ( sempre voltar )
 
 ng build --configuration production --base-href "https://paulo-borges.github.io/portfolio-angular/"
 
-angular-cli-ghpages --dir=dist/portfolio-angular/browser
+npx angular-cli-ghpages --dir=dist/portfolio-angular/browser
