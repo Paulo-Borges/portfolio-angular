@@ -7,57 +7,55 @@ import { Project } from '../models/project.model';
 export class ProjectService {
   private projects: Project[] = [
     {
-      title: 'SMTP  / C# / .NET ',
-      description: 'Sistema com back-end desenvolvido em .NET e APIs RESTful.',
-      technologies: ['.NET ', 'C#  ', 'SQL Server ', 'Entity Framework'],
-      githubUrl: 'https://github.com/Paulo-Borges/SMTP.git',
-      imageUrl: 'emConstrucao.jpg'
-    },
-    {
-      title: 'SMTPFront  /  ANGULAR',
-      description: 'Aplicação front-end, do projeto SMTP.',
-      technologies: ['Angular20', 'TailwindCss ', ' Bootstrap'], 
-      githubUrl: 'https://github.com/Paulo-Borges/SMTPFront.git',
-      imageUrl: 'emConstrucao.jpg'
-    },
-    {
-      title: 'BorgEventos  / C# / .NET / ANGULAR',
-      description: 'Sistema completo de gerenciamento de eventos, com back-end robusto desenvolvido em .NET e APIs RESTful.',
-      technologies: ['.NET ', 'C#  ', 'SQL Server ', 'Entity Framework'],
-      githubUrl: 'https://github.com/Paulo-Borges/BorgEventos.git',
-      imageUrl: 'emConstrucao.jpg'
-    },
-    {
       title: 'Portfolio  /  ANGULAR',
       description: 'Aplicação front-end, dos meus projetos e de tudo que estou estudando.',
-      technologies: ['Angular21', 'TailwindCss ', ' Bootstrap'], 
+      technologies: ['Angular21', 'TailwindCss ', ' Bootstrap'],
       githubUrl: 'https://github.com/Paulo-Borges/portfolio-angular.git',
-      imageUrl: 'Portifolio.png'
+      imageUrl: 'Portifolio.png',
     },
     {
       title: 'Financeiro  /  ANGULAR',
-      description: 'Aplicação front-end, com Signals, @for, tratamento de erros, inputs e gráfico financeiro com Chart.js e ng2-charts.',
-      technologies: ['Angular 21', 'TailwindCss', 'Chart.js', 'ng2-charts', 'API da Alpha Vantage'], 
+      description:
+        'Aplicação front-end, com Signals, @for, tratamento de erros, inputs e gráfico financeiro com Chart.js e ng2-charts.',
+      technologies: ['Angular 21', 'TailwindCss', 'Chart.js', 'ng2-charts', 'API da Alpha Vantage'],
       githubUrl: 'https://github.com/Paulo-Borges/portfolio-angular.git',
-      imageUrl: 'angularFinance.png'
+      imageUrl: 'angularFinance.png',
     },
     {
       title: 'Clock  /  ANGULAR',
-      description: 'O **Angular Clock** é uma aplicação web que exibe a hora e a data atualizadas a cada segundo. O relógio principal usa o fuso `America/Sao_Paulo`, e cartões adicionais mostram o mesmo instante em outros países, formatados em português do Brasil (`pt-BR`).',
-      technologies: ['Angular 21', 'Tailwind CSS 4', 'TypeScript 5.9', 'RxJS'], 
+      description:
+        'O **Angular Clock** é uma aplicação web que exibe a hora e a data atualizadas a cada segundo. O relógio principal usa o fuso `America/Sao_Paulo`, e cartões adicionais mostram o mesmo instante em outros países, formatados em português do Brasil (`pt-BR`).',
+      technologies: ['Angular 21', 'Tailwind CSS 4', 'TypeScript 5.9', 'RxJS'],
       githubUrl: 'https://github.com/Paulo-Borges/angular-clock.git',
-      imageUrl: 'AngularClock.png'
+      imageUrl: 'AngularClock.png',
     },
     {
       title: 'Formulário  /  ANGULAR',
-      description: 'Aplicação front-end, com diretivas, @for, @if, arquitetura com CommonModule e FormsModule .',
-      technologies: ['Angular ', 'HttpClient'], 
+      description:
+        'Aplicação front-end, com diretivas, @for, @if, arquitetura com CommonModule e FormsModule .',
+      technologies: ['Angular ', 'HttpClient'],
       githubUrl: 'https://github.com/Paulo-Borges/form-angular.git',
-      imageUrl: 'emConstrucao.jpg'
-    }
+      imageUrl: 'emConstrucao.jpg',
+    },
+    {
+      title: 'baseBack  /  C# / .NET',
+      description: 'Aplicação back-end, com arquitetura em camadas, utilizando C# e .NET.',
+      technologies: ['C#', '.NET', 'Entity Framework', 'SQL Server'],
+      githubUrl: 'https://github.com/Paulo-Borges/baseBack.git',
+      imageUrl: 'baseBack.png',
+    },
+    {
+      title: 'baseFront  /  ANGULAR',
+      description:
+        'Aplicação front-end, com diretivas, @for, @if, arquitetura com CommonModule, AsyncPipe e FormsModule, Observable, Router.',
+
+      technologies: ['Angular ', 'HttpClient'],
+      githubUrl: 'https://github.com/Paulo-Borges/baseFront.git',
+      imageUrl: 'baseFront.jpeg',
+    },
   ];
 
   getProjects(): Project[] {
-    return this.projects
+    return this.projects;
   }
 }
