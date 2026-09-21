@@ -1,30 +1,26 @@
-
 <header>
-    <nav class="flex justify-between px-18 sm:px-8 py-5 border-b-2 cursor-pointer">
-        <div>
-            <h1 class="text-neutral-50">{{ title()}}</h1>
-        </div>
-        <div class="hidden sm:flex">
-            <ul class="flex gap-6 ">
-                <li class="text-neutral-50 hover:text-red-500">
-                    <a href="#about">SOBRE</a>
-                </li>
-                <li class="text-neutral-50 hover:text-red-500">
-                    <a href="#projects">PROJETOS</a> 
-                </li>
-                <li class="text-neutral-50 hover:text-red-500">
-                    <a href="#skills">SKILLS</a>
-                </li>
-                <li class="text-neutral-50 hover:text-red-500">
-                    <a href="#contact">CONTATO</a>
-                    
-                </li>
-            </ul>
-        </div>
-        <div>
-            <span class="text-red-500 border p-1 text-xs hover:text-red-300">
-                Open to Work
-            </span>
-        </div>
-    </nav>
+  <nav class="flex justify-between px-18 sm:px-8 py-5 border-b-2 cursor-pointer">
+    <div>
+      <h1 class="text-neutral-50">{{ title() }}</h1>
+    </div>
+    <div class="hidden sm:flex">
+      <ul class="flex gap-6">
+        <li class="text-neutral-50 hover:text-red-500">
+          <a routerLink="/about">SOBRE</a>
+        </li>
+        <li class="text-neutral-50 hover:text-red-500">
+          <a routerLink="/projects">PROJETOS</a>
+        </li>
+        <li class="text-neutral-50 hover:text-red-500">
+          <a routerLink="/skills">SKILLS</a>
+        </li>
+        <li class="text-neutral-50 hover:text-red-500">
+          <a routerLink="/contact">CONTATO</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <span class="text-red-500 border p-1 text-xs hover:text-red-300"> Open to Work </span>
+    </div>
+  </nav>
 </header>
