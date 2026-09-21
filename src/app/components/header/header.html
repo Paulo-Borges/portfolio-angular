@@ -1,10 +1,12 @@
 <header>
-  <nav class="flex justify-between px-18 sm:px-8 py-5 border-b-2 cursor-pointer">
+  <nav
+    class="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 px-6 sm:px-10 lg:px-18 py-4 sm:py-5 border-b-2 cursor-pointer"
+  >
     <div>
-      <a class="text-neutral-50" routerLink="/">{{ title() }}</a>
+      <a routerLink="/" class="text-neutral-50 sm:m-28">{{ title() }}</a>
     </div>
-    <div class="hidden sm:flex">
-      <ul class="flex gap-6">
+    <div class="flex">
+      <ul class="flex flex-wrap justify-center gap-4 sm:gap-6">
         <li class="text-neutral-50 hover:text-red-500">
           <a routerLink="/about">SOBRE</a>
         </li>
@@ -20,7 +22,9 @@
       </ul>
     </div>
     <div>
-      <span class="text-red-500 border p-1 text-xs hover:text-red-300"> Open to Work </span>
+      <span class="text-red-500 border p-1 text-xs hover:text-red-300 sm:ml-28">
+        Open to Work
+      </span>
     </div>
   </nav>
 </header>
