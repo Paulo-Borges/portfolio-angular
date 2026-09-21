@@ -21,15 +21,15 @@ Estagiário de Desenvolvimento de Software na **HM Consultoria** (desde jun/2026
 
 ### Projetos em destaque
 
-| Projeto | Tecnologias |
-|---------|-------------|
-| SMTP | .NET, C#, SQL Server, Entity Framework |
-| SMTPFront | Angular 20, Tailwind CSS, Bootstrap |
-| BorgEventos | .NET, C#, SQL Server, Entity Framework |
-| Portfolio | Angular 21, Tailwind CSS, Bootstrap |
-| Financeiro | Angular 21, Chart.js, ng2-charts, Alpha Vantage |
-| Clock | Angular 21, Tailwind CSS 4, RxJS |
-| Formulário | Angular, HttpClient, FormsModule |
+| Projeto     | Tecnologias                                     |
+| ----------- | ----------------------------------------------- |
+| SMTP        | .NET, C#, SQL Server, Entity Framework          |
+| SMTPFront   | Angular 20, Tailwind CSS, Bootstrap             |
+| BorgEventos | .NET, C#, SQL Server, Entity Framework          |
+| Portfolio   | Angular 21, Tailwind CSS, Bootstrap             |
+| Financeiro  | Angular 21, Chart.js, ng2-charts, Alpha Vantage |
+| Clock       | Angular 21, Tailwind CSS 4, RxJS                |
+| Formulário  | Angular, HttpClient, FormsModule                |
 
 ## Tecnologias
 
@@ -119,10 +119,28 @@ Executa os testes unitários com Vitest.
 
 Projeto de portfólio pessoal. Sinta-se à vontade para usar como referência.
 
+## 1 - Arquitetura de Software (Acertei as rotas direta no router.ts)
+
+```
+app/
+ ├─ app.ts / app.html / app.config.ts / app.routes.ts   → shell da aplicação
+ ├─ components/  → componentes de apresentação (About, Header, Footer, Skills, Contact, Projects)
+ ├─ services/    → ProjectService (regra de acesso a dados)
+ └─ models/      → Project (contrato de dados/tipagem)
+
+```
+
+Por que isso importa: se amanhã a lista de projetos vier de uma API REST em vez de um array fixo, você só troca o ProjectService. Nenhum componente muda. Isso é o princípio de inversão de dependência — o componente não sabe de onde vêm os dados, só sabe pedir (inject(ProjectService) + getProjects()).
+
+## 2 - Gerenciamento de Estado (RxJS / Signals / NgRx)
+
+Por quê usar RxJS em vez de Signals aqui: RxJS é a ferramenta certa quando existe assincronicidade real (chamadas HTTP, debounce de digitação, cancelamento de requisições, combinação de múltiplos streams). Signals são ótimos para estado síncrono local; RxJS é mais rico para pipelines de eventos (operadores como debounceTime, switchMap, catchError).
+
+Opção — NgRx (só se o projeto crescer em complexidade):
 
 ## MEU CONTROLE ( PRA ATUALIZAR )
 
-cd E:\portfolio-angular  ( sempre voltar )
+cd E:\portfolio-angular ( sempre voltar )
 
 ng build --configuration production --base-href "https://paulo-borges.github.io/portfolio-angular/"
 
