@@ -1,4 +1,4 @@
-<section id="about" class="border-b-2 px-8 py-9">
+<section id="about" class="border-b-2 px-8 min-h-screen py-9">
   <div class="flex gap-3 items-center">
     <h1 class="text-white text-sm sm:text-2xl font-semibold pb-8 sm:py-8">sobre mim</h1>
     <p class="border-b-2 hidden sm:flex w-[83%] h-1"></p>
@@ -6,7 +6,7 @@
 
   <div class="flex flex-wrap justify-center gap-4">
     @for (card of cards; track card.title) {
-      <div class="bg-zinc-900 border w-full max-w-sm sm:max-w-md p-2 rounded-xl text-white">
+      <div class="bg-zinc-900 border w-full p-4 m-8 rounded-xl text-white">
         <span class="text-red-700">
           <i [className]="'bi ' + card.icon"></i>
           <!--muito importante ser assim pra colocar os icones -->
