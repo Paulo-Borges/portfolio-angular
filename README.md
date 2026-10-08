@@ -138,6 +138,17 @@ Por quê usar RxJS em vez de Signals aqui: RxJS é a ferramenta certa quando exi
 
 Opção — NgRx (só se o projeto crescer em complexidade):
 
+## 3 - Testes Unitários com Vitest
+
+```
+Testando lógica pura de serviço (project.service.spec.ts):
+
+Testando um componente que usa inject (projects.component.spec.ts):
+
+Testando o método formatTime do Footer isoladamente:
+
+```
+
 ## MEU CONTROLE ( PRA ATUALIZAR )
 
 cd E:\portfolio-angular ( sempre voltar )
