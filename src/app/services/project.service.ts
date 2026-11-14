@@ -13,9 +13,9 @@ export class ProjectService {
       githubUrl: 'https://github.com/Paulo-Borges/portfolio-angular.git',
       imageUrl: 'Portifolio.png',
     },
-     {
+    {
       title: 'Temple  /  REACT',
-      description: 'Aplicação full stack, feito com React, C# e Claude',
+      description: 'Aplicação full stack, feito com React, C# e Claude Code',
       technologies: ['React', 'TailwindCss ', ' React-Router-Dom'],
       githubUrl: 'https://github.com/Paulo-Borges/temple.git',
       imageUrl: 'emConstrucao.jpg',
