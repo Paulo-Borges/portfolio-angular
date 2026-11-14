@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-header',
   imports: [RouterLink],
   templateUrl: './header.html',
-  styleUrl: './header.css',
+
 })
 export class Header {
   protected readonly title = signal('BORGES');
