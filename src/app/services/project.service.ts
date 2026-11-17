@@ -18,7 +18,7 @@ export class ProjectService {
       description: 'Aplicação full stack, feito com React, C# e Claude Code',
       technologies: ['React', 'TailwindCss ', ' React-Router-Dom'],
       githubUrl: 'https://github.com/Paulo-Borges/temple.git',
-      imageUrl: 'emConstrucao.jpg',
+      imageUrl: 'TempleBack.png',
     },
     {
       title: 'Financeiro  /  ANGULAR',
