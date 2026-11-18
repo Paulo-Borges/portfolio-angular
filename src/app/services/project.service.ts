@@ -15,7 +15,8 @@ export class ProjectService {
     },
     {
       title: 'Temple  /  REACT',
-      description: 'Aplicação full stack, feito com React, C# e Claude Code',
+      description:
+        'Sistema Full Stack desenvolvido para gerenciamento de informações através de APIs RESTful. Implementado com React, .NET, Entity Framework Core e SQL Server, utilizando arquitetura em camadas, autenticação e boas práticas de desenvolvimento.',
       technologies: ['React', 'TailwindCss ', ' React-Router-Dom'],
       githubUrl: 'https://github.com/Paulo-Borges/temple.git',
       imageUrl: 'TempleBack.png',
