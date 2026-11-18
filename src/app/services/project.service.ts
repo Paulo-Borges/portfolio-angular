@@ -8,8 +8,16 @@ export class ProjectService {
   private projects: Project[] = [
     {
       title: 'Portfolio  /  ANGULAR',
-      description: 'Aplicação front-end, dos meus projetos e de tudo que estou estudando.',
-      technologies: ['Angular21', 'TailwindCss ', ' Bootstrap'],
+      description:
+        'Aplicação criada para consolidar estudos e práticas em React,  Angular e C# , utilizando Tailwindcss, Bootstrap, TypeScript, componentes reutilizáveis, services, interfaces e organização modular da aplicação.',
+      technologies: [
+        'Angular21',
+        'TailwindCss ',
+        ' Bootstrap',
+        'React',
+        'Sql Server',
+        'Entity Framework Core',
+      ],
       githubUrl: 'https://github.com/Paulo-Borges/portfolio-angular.git',
       imageUrl: 'Portifolio.png',
     },
