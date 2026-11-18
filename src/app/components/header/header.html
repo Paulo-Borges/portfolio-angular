@@ -19,16 +19,26 @@
         <li class="text-neutral-50 hover:text-red-500">
           <a routerLink="/contact">CONTATO</a>
         </li>
-        <li class="text-neutral-50 hover:text-red-500">
-          <a href="https://www.linkedin.com/in/paulo-borges-de-almeida-b543b3242/" target="_blank">LINKEDIN</a>
+        <li class="text-neutral-50 hover:text-red-500 hidden sm:flex">
+          <a href="https://www.linkedin.com/in/paulo-borges-de-almeida-b543b3242/" target="_blank"
+            >LINKEDIN</a
+          >
         </li>
-        <li class="text-neutral-50 hover:text-red-500">
+        <li class="text-neutral-50 hover:text-red-500 hidden sm:flex">
           <a href="https://github.com/Paulo-Borges" target="_blank">GITHUB</a>
         </li>
       </ul>
     </div>
     <div>
-      <span class="text-red-500 border p-1 text-xs hover:text-green-300"> Open to Work </span>
+      <a
+        href="https://linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group inline-block text-center `min-w-[175px]` text-green-300 border rounded p-2 text-xs hover:text-green-500 hover:border-green-500 transition-colors"
+      >
+        <span class="group-hover:hidden">Open to Work</span>
+        <span class="hidden group-hover:inline">Linkedin</span>
+      </a>
     </div>
   </nav>
 </header>
