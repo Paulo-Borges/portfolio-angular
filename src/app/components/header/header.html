@@ -29,7 +29,7 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="space-x-2">
       <a
         href="https://linkedin.com"
         target="_blank"
@@ -39,6 +39,18 @@
         <span class="group-hover:hidden">Open to Work</span>
         <span class="hidden group-hover:inline">Linkedin</span>
       </a>
+
+      <button
+         type="button"
+         (click)="themeService.toggleTheme()"
+         class="px-4 py-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+      >
+  @if (themeService.isDarkMode()) {
+    <span>☀️</span>
+  } @else {
+    <span>🌙</span>
+  }
+</button>
     </div>
   </nav>
 </header>
